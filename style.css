@@ -2,84 +2,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 
 
-body{
-  background-color: hsl(233, 47%, 7%);
+*{
   margin:0;
+  padding:0;
+  font-family: "Inter", sans-serif;
+}
+
+
+.main{
+  width:100%;
+  height:800px;
+  background-color: hsl(233, 47%, 7%);
+}
+
+.header{
+  display:flex;
+  width: 70%;
+  height:450px;
+  position:relative;
+  top:18%;
+  left:14%;
+  background:hsl(244, 38%, 16%);
+  border-radius: 10px;
 }
 
 
 .card{
-  position: absolute;
-  background-color: hsl(244, 38%, 16%);
-  display:inline-block;
-  width:400px;
-  height:300px;
-  padding:50px;
-  top:100px;
-  left:200px;
-  font-size: 15px;
-  line-height: 1.6rem;
-  font-family:'Inter',sans-serif;
+  width:50%;
+  height:100%
+}
+
+.card h1{
+  font-size: 38px;
+  color:hsl(0, 0%, 100%);
+  text-align: center;
+  width: 80%;
+  padding-top:60px;
+  padding-left:60px;
+  line-height: 50px;
+}
+
+.card p{
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 12px;
+  width:70%;
+  padding-top:30px;
+  padding-left:90px;
+  line-height: 30.4px;
+  letter-spacing: 1.4px;
 }
 
 span{
   color:hsl(277, 64%, 61%);
 }
 
+
+
+.contents-main{
+  display:flex;
+  padding-top:50px;
+  padding-left:40px;
+} 
+
+
+.contents-1 h2{
+  padding-left: 50px;
+  color: hsl(0, 0%, 100%);
+}
+
+.contents-1 p{
+  padding-left: 50px;
+  padding-top: 5px;
+  color: hsla(0, 0%, 100%, 0.40);
+  font-size: 13px;
+}
+
 .image{
-  background-color: hsl(277, 64%, 61%);
-  position: absolute;
-  display:inline-block;
-  width:500px;
-  height:400px;
-  top:100px;
-  left:700px;
-}
+  width: 50%;
+  height:100%;
+  background-size: cover;
+  border-radius: 0 10px 10px 0;
+  background-image: url('image-header-desktop.jpg');
+  box-shadow: inset 0 0 0 1000px rgba(110, 18, 167, 0.5);
+  
 
-.image img{
-  width: 500px;
-  height:400px;
-  opacity:0.25;
-}
-
-.one{
-  padding:20px;
-  color:hsla(0, 0%, 100%, 0.6);
-  position:relative;
-  display:inline-block;
-  font-size:15px;
-}
-
-.two{
-  padding:20px;
-  color:hsla(0, 0%, 100%, 0.6);
-  position:relative;
-  display:inline-block;
-  font-size:15px;
- 
-}
-
-.three{
-  padding:20px;
-  color:hsla(0, 0%, 100%, 0.6);
-  position:relative;
-  display:inline-block;
-  font-size:15px;
-}
-
-.card h1{
-  color:hsl(0, 0%, 100%);
-}
-
-.para{
-  color:hsla(0, 0%, 100%, 0.75);
-}
-
-div h2{
-  margin-bottom: 0;
-}
-
-div p{
-  margin-top: 0;
-  font-size: 15px;
 }
